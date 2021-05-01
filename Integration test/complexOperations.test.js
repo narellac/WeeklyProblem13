@@ -4,7 +4,13 @@ import * as complexOperations from './complexOperations';
 describe('complexOperation - Unit Tests', () => {
   describe('checkEmail', () => {
     it('first test for checkEmail', () => {
-      
+      expect(complexOperations.checkEmail(10)).toBe('The email should be an string');
+    });
+    it('Second test for checkEmail', () => {
+      expect(complexOperations.checkEmail('Narella')).toBe('The email is invalid');
+    });
+    it('Third test for checkEmail', () => {
+      expect(complexOperations.checkEmail('narellacalvente@gmail.com')).toBe('The email is valid');
     });
   });
 
@@ -34,7 +40,6 @@ describe('complexOperation - Unit Tests', () => {
 
   describe('numberOfOddAndEvenNumbers', () => {
     it('first test for numberOfOddAndEvenNumbers', () => {
-      
     });
   });
 });
