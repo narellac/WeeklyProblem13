@@ -66,12 +66,12 @@ describe('complexOperation - Unit Tests', () => {
     it('Second test for sortArrayOfObjectsByKey', () => {
       expect(complexOperations.sortArrayOfObjectsByKey([5, 6])).toBe('The second param should be an string');
     });
-    /*it('Third test for sortArrayOfObjectsByKey', () => {
-      expect(complexOperations.sortArrayOfObjectsByKey({name: 'Narella', age: 26})).toStrictEqual(`Some elements in the array does not have the ${'string'} property`);
+    it('Third test for sortArrayOfObjectsByKey', () => {
+      expect(complexOperations.sortArrayOfObjectsByKey([{position: 'One'}, {position:'Two'}, {place: 'Three'}], 'position')).toEqual('Some elements in the array does not have the position property');
     });
     it('Four test for sortArrayOfObjectsByKey', () => {
-      expect(complexOperations.sortArrayOfObjectsByKeys({firstName:'Narella', lastName:'Calvente', age:'25'})).toStrictEqual({age:'25', firstName:'Narella', lastName:'Calvente'});
-    });*/
+      expect(complexOperations.sortArrayOfObjectsByKey([{position: 'One'}, {position:'Two'}, {position:'Three'}], 'position')).toEqual([{"position": "One"}, {"position": "Three"}, {"position": "Two"}]);
+    });
   });
 
   describe('numberOfOddAndEvenNumbers', () => {
@@ -82,10 +82,7 @@ describe('complexOperation - Unit Tests', () => {
       expect(complexOperations.numberOfOddAndEvenNumbers(['hello', 'world'])).toBe(`The array should have only numbers`);
     });
     it('Third test for numberOfOddAndEvenNumbers', () => {
-      expect(complexOperations.numberOfOddAndEvenNumbers([4, 6, 8])).toStrictEqual({"even": 3, "odd": 0});
-    });
-    it('Four test for numberOfOddAndEvenNumbers', () => {
-      expect(complexOperations.numberOfOddAndEvenNumbers([2, 4, 6, 8, 10])).toStrictEqual({"even": 5, "odd": 0});
+      expect(complexOperations.numberOfOddAndEvenNumbers([2, 4, 5, 6, 7, 8])).toEqual({"even": 4, "odd": 2});
     });
   });
 });
