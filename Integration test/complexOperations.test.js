@@ -67,12 +67,12 @@ describe('complexOperation - Unit Tests', () => {
       expect(complexOperations.sortArrayOfObjectsByKey([5, 6])).toBe('The second param should be an string');
     });
     /*it('Third test for sortArrayOfObjectsByKey', () => {
-      expect(complexOperations.sortArrayOfObjectsByKey(['Narella', 26])).toBe(`Some elements in the array does not have the ${' '} property`);
+      expect(complexOperations.sortArrayOfObjectsByKey({name: 'Narella', age: 26})).toStrictEqual(`Some elements in the array does not have the ${'string'} property`);
     });
     it('Four test for sortArrayOfObjectsByKey', () => {
       expect(complexOperations.sortArrayOfObjectsByKeys({firstName:'Narella', lastName:'Calvente', age:'25'})).toStrictEqual({age:'25', firstName:'Narella', lastName:'Calvente'});
-    });
-  });*/
+    });*/
+  });
 
   describe('numberOfOddAndEvenNumbers', () => {
     it('First test for numberOfOddAndEvenNumbers', () => {
@@ -89,4 +89,3 @@ describe('complexOperation - Unit Tests', () => {
     });
   });
 });
-})
