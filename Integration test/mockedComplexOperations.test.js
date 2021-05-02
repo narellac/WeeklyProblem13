@@ -25,10 +25,10 @@ describe('complexOperation - Unit Tests', () => {
       expect(complexOperations.calculateArea('square', 5, 5)).toBe(25);
     });
     it('Four test for calculateArea', () => {
-      expect(complexOperations.calculateArea('rectangle', 5, 10)).toBe(50);
+      expect(complexOperations.calculateArea('rectangle', 2.5, 10)).toBe(25);
     });
     it('Five test for calculateArea', () => {
-      expect(complexOperations.calculateArea('triangle', 4, 8)).toBe(16);
+      expect(complexOperations.calculateArea('triangle', 5, 10)).toBe(25);
     });
     it('Six test for calculateArea', () => {
       expect(complexOperations.calculateArea('circle', 10)).toBeCloseTo(314.16);

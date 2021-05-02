@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">79.49% </span>
+                <span class="strong">97.44% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>31/39</span>
+                <span class='fraction'>38/39</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">75% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/4</span>
+                <span class='fraction'>3/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">78.95% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>15/19</span>
+                <span class='fraction'>19/19</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">80% </span>
+                <span class="strong">97.14% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>28/35</span>
+                <span class='fraction'>34/35</span>
             </div>
         
             
@@ -55,7 +55,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line medium'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -122,7 +122,7 @@
 <a name='L63'></a><a href='#L63'>63</a>
 <a name='L64'></a><a href='#L64'>64</a>
 <a name='L65'></a><a href='#L65'>65</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">25x</span>
+<span class="cline-any cline-yes">23x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
@@ -130,7 +130,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
@@ -160,7 +160,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
@@ -168,23 +168,23 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">export const isNumber = number =&gt; {
   return typeof number === 'number';
 }
@@ -223,21 +223,21 @@ export const isSupportedFigure = (figure) =&gt; {
   return supportedFigures.includes(figure.toLowerCase());
 };
 &nbsp;
-export const arrayElementsAreObjectWithKey = <span class="fstat-no" title="function not covered" >(a</span>rray, key) =&gt; {
-<span class="cstat-no" title="statement not covered" >  return array.every(<span class="fstat-no" title="function not covered" >el</span>ement =&gt; <span class="cstat-no" title="statement not covered" >element[key])</span>;</span>
+export const arrayElementsAreObjectWithKey = (array, key) =&gt; {
+  return array.every(element =&gt; element[key]);
 }
 &nbsp;
 export const arrayIntersection = (array1, array2) =&gt; {
   return array1.filter(element =&gt; array2.includes(element));
 };
 &nbsp;
-export const sortArrayByKey = <span class="fstat-no" title="function not covered" >(a</span>rray, key) =&gt; {
-<span class="cstat-no" title="statement not covered" >  return array.sort(<span class="fstat-no" title="function not covered" >(a</span>,b) =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >    if (a[key] &lt; b[key]) {</span>
-<span class="cstat-no" title="statement not covered" >      return -1;</span>
+export const sortArrayByKey = (array, key) =&gt; {
+  return array.sort((a,b) =&gt; {
+    if (a[key] &lt; b[key]) {
+      return -1;
     }
-<span class="cstat-no" title="statement not covered" >    if (a[key] &gt; b[key]) {</span>
-<span class="cstat-no" title="statement not covered" >      return 1;</span>
+    <span class="missing-if-branch" title="else path not taken" >E</span>if (a[key] &gt; b[key]) {
+      return 1;
     }
 <span class="cstat-no" title="statement not covered" >    return 0;</span>
   });
@@ -256,7 +256,7 @@ export const getOddNumbersFromArray = (array) =&gt; {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Sat May 01 2021 15:55:50 GMT-0300 (hora estándar de Argentina)
+                at Sun May 02 2021 08:25:34 GMT-0300 (hora estándar de Argentina)
             </div>
         </div>
         <script src="prettify.js"></script>

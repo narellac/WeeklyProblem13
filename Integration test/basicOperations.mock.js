@@ -1,19 +1,19 @@
 import 'jest';
 
-let isNumber = jest.fn().mockReturnValue();
-let isArray = jest.fn().mockReturnValue();
-let isString = jest.fn().mockReturnValue();
-let validateEmail = jest.fn().mockReturnValue();
-let sum = jest.fn().mockReturnValue();
-let multip = jest.fn().mockReturnValue();
-let division = jest.fn().mockReturnValue();
-let exponent = jest.fn().mockReturnValue();
-let isSupportedFigure = jest.fn().mockReturnValue();
-let arrayElementsAreObjectWithKey = jest.fn().mockReturnValue();
-let arrayIntersection = jest.fn().mockReturnValue();
-let sortArrayByKey = jest.fn().mockReturnValue();
-let getEvenNumbersFromArray = jest.fn().mockReturnValue();
-let isNumber = jest.fn().mockReturnValue();
+let isNumber = jest.fn().mockReturnValue(true);
+let isArray = jest.fn().mockReturnValue(true);
+let isString = jest.fn().mockReturnValue(true);
+let validateEmail = jest.fn().mockReturnValue(true);
+let sum = jest.fn().mockReturnValue(6);
+let multip = jest.fn().mockReturnValue(25);
+let division = jest.fn().mockReturnValue(25);
+let exponent = jest.fn().mockReturnValue(100);
+let isSupportedFigure = jest.fn().mockReturnValue(true);
+let arrayElementsAreObjectWithKey = jest.fn().mockReturnValue(true);
+let arrayIntersection = jest.fn().mockReturnValue(['apple']);
+let sortArrayByKey = jest.fn().mockReturnValue(true);
+let getEvenNumbersFromArray = jest.fn().mockReturnValue([2, 4, 6, 8]);
+let isNumber = jest.fn().mockReturnValue([5, 7]);
 
 const funcMock = jest.mock('./basicOperations', () => {
   return {
@@ -31,7 +31,5 @@ const funcMock = jest.mock('./basicOperations', () => {
     sortArrayByKey,
     getEvenNumbersFromArray,
     getOddNumbersFromArray,
-  };
+  }
 });
-
-export default funcMock;
