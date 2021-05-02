@@ -13,9 +13,9 @@ let arrayElementsAreObjectWithKey = jest.fn().mockReturnValue(true);
 let arrayIntersection = jest.fn().mockReturnValue(['apple']);
 let sortArrayByKey = jest.fn().mockReturnValue(true);
 let getEvenNumbersFromArray = jest.fn().mockReturnValue([2, 4, 6, 8]);
-let isNumber = jest.fn().mockReturnValue([5, 7]);
+let getOddNumbersFromArray = jest.fn().mockReturnValue([5, 7]);
 
-const funcMock = jest.mock('./basicOperations', () => {
+const funcMock = jest.mock('./basicOperations.js', () => {
   return {
     isNumber,
     isArray,
@@ -33,3 +33,5 @@ const funcMock = jest.mock('./basicOperations', () => {
     getOddNumbersFromArray,
   }
 });
+
+export default funcMock;
